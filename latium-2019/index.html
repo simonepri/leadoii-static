@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Leaderboard for Latium's Athletes of Italian Olympiads of Informatics 2019</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#424242" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<style>body{margin:0}iframe{display:block;background:transparent;border:none;height:100vh;width:100vw}</style>
+	<iframe id="iframe-body" src="" sandbox="allow-same-origin allow-scripts allow-pointer-lock"></iframe>
+	<script>
+		var problems = [
+			'ois_restaurants',
+			'easy1',
+			'easy2',
+			'easy3',
+		]
+		var users = [
+			'gpaolodatu',
+			'Cirex02727',
+			'qazwsxedc',
+			'MasMaxie',
+			'laxlorenzo',
+			'vinz06',
+			'valla',
+			'francesco_',
+			'clacla',
+			'LucaZhang',
+			'SimoneDC01',
+			'LucaB',
+			'fortytwo',
+			'_salvatorii_',
+			'Lor3nxin1k',
+			'samuelestazi22',
+			'leonardo_k',
+			'simo2906',
+			'EnomiS',
+			'josephine.balan',
+			'tommaso907',
+			'Mirans8',
+			'emanuele_lanuti',
+			'gabrimat1',
+			'Makimass',
+			'Punch',
+			'Francesco02',
+			'LongGian',
+			'M.Pannacci',
+			'Anorchish',
+			'Eleonora',
+			'michelefia196',
+			'Cigo',
+		]
+		var link = 'https://leadoii.now.sh/leaderboard' + '?u=' + users.join('&u=') + '&p=' + problems.join('&p=');
+
+		document.getElementById('iframe-body').src = link;
+	</script>
+</body>
+</html>
