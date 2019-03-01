@@ -1,0 +1,58 @@
+
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pre-Generated Leaderboard of the Italian Olympiads of Informatics Training Platform</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#424242" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  </head>
+  <body>
+    <style>
+      body{background-color:#f2f2f2;letter-spacing:.04em}.container{margin-top:30px;max-width:500px}.card{overflow:auto}.waves-effect{width:100%}.subheader{font-size:1rem;font-weight:500;line-height:1.5rem;margin:.75rem 16px}.list-divider{border:0;height:1px;overflow:hidden;background-color:#e0e0e0;margin-right:16px;margin-left:75px}.list{margin:0}.list li{padding:0 16px}.list li .valign-wrapper{min-height:72px}.list i.circle{padding:10px;background-color:rgba(0,0,0,.26)}.list .title span{color:rgba(0,0,0,.54)}.ml-auto{margin-left:auto}i.ml-auto{color:rgba(0,0,0,.26)}
+    </style>
+    
+    <div class="container">
+      <div class="card">
+        <h3 class="subheader">Leaderboards</h3>
+        <ul id="list" class="list"></ul>
+      </div>
+    </div>
+
+    <script>
+      var listObj = document.getElementById('list');
+      function createListElement(name, path) {
+        var d = document.createElement('div');
+        d.innerHTML =
+          `<li class="waves-effect">
+            <a href="${path}">
+              <div class="valign-wrapper">
+                <i class="material-icons left circle white-text">insert_link</i>
+                <div class="title">
+                  ${name}<br>
+                </div>
+              </div>
+            </a>
+          </li>`;
+        return d.firstChild;
+      }
+
+      (async () => {
+        const response = await fetch('https://api.github.com/repos/simonepri/leadoii-static/contents/');
+        const data = await response.json();
+        for (let file of data) {
+          var o  = createListElement(file.name, file.path);
+          console.log(o);
+          listObj.appendChild(o);
+        }
+      })()
+    </script>
+  <body>
+</html>
