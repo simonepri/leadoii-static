@@ -1,7 +1,7 @@
 {
   "version": 2,
   "name": "leadoii-static",
-  "alias": "leadoii-static",
+  "alias": "static-leadoii",
   "builds": [],
   "routes": [
     {"src": "(.*)/", "dest": "$1/index.html"},
