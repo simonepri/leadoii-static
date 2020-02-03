@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "name": "leadoii-static",
+  "alias": "leadoii-static",
+  "builds": [],
+  "routes": [
+    {"src": "(.*)/", "dest": "$1/index.html"},
+    {"src": "(.*)", "dest": "$1"}
+  ]
+}

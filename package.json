@@ -1,0 +1,18 @@
+{
+  "name": "leadoii-static",
+  "version": "0.1.0",
+  "description": "Pre-Generated Leaderboards of the Italian Olympiads of Informatics Training Platform Users",
+  "license": "MIT",
+  "private": true,
+  "author": "Simone Primarosa <simonepri@outlook.com> (https://simoneprimarosa.com)",
+  "scripts": {
+    "start": "now dev",
+    "build": " "
+  },
+  "files": [
+    "public"
+  ],
+  "devDependencies": {
+    "now": "*"
+  }
+}
