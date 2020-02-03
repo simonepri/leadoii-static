@@ -51,7 +51,7 @@
           if (file.type != 'dir') {
             continue;
           }
-          var o = createListElement(file.name, file.path).replace(/^public/,".");
+          var o = createListElement(file.name, file.path.replace(/^public/,"."));
           console.log(o);
           listObj.appendChild(o);
         }
