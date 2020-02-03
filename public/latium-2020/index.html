@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Leaderboard for Latium's Athletes of Italian Olympiads of Informatics 2020</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#424242" />
+	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+<body>
+	<style>body{margin:0}iframe{display:block;background:transparent;border:none;height:100vh;width:100vw}</style>
+	<iframe id="iframe-body" src="" sandbox="allow-same-origin allow-scripts allow-pointer-lock"></iframe>
+	<script>
+		var problems = [
+		]
+		var users = [
+		]
+		var link = 'https://leadoii.now.sh/leaderboard' + '?u=' + users.join('&u=') + '&p=' + problems.join('&p=');
+
+		document.getElementById('iframe-body').src = link;
+	</script>
+</body>
+</html>
