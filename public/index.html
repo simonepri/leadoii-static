@@ -45,7 +45,7 @@
       }
 
       (async () => {
-        const response = await fetch('https://api.github.com/repos/simonepri/leadoii-static/contents/');
+        const response = await fetch('https://api.github.com/repos/simonepri/leadoii-static/contents/public/');
         const data = await response.json();
         for (let file of data) {
           if (file.type != 'dir') {
