@@ -11,6 +11,73 @@
 </head>
 <body>
 	<style>body{margin:0}iframe{display:block;background:transparent;border:none;height:100vh;width:100vw}</style>
-	<iframe src="https://leadoii.now.sh/leaderboard?u=Andrei&u=IvanSpaccatrosi&u=bigsheep&u=Damiano&u=pazzoeo&u=DavideSpanti&u=Enricobelli00&u=Frap&u=Francesco02&u=AlessandroD&u=madeve&u=Nhix&u=LeonardoVico&u=fortytwo&u=Arturo&u=ByAxeel&u=carlo_malagnino&u=pietro&u=Giulio&u=AntonioCap&u=SimoneDC01&u=dartesco&u=Rikart&u=RobertB.&u=Mattia23&u=LarisaMarincas&u=crasherlord&u=Luca&u=chiaradea03&u=AndreaDottavio&u=Emanueleg2000&u=Francesco7&u=ArahnZ&p=easy1&p=easy2&p=easy3&p=turni&p=domino&p=ois_jumps&p=abc_previsioni&p=ois_wordsearch&p=tris&p=abc_studioamico&p=poldo&p=sommelier&p=ois_rescaling&p=ois_subset&p=nonna&p=ponti&p=dijkstra&p=mat_boa&p=abc_edifici&p=sunny&p=spesa&p=ois_excursion&p=sentieri&p=ois_annoluce&p=semiprimo" sandbox="allow-same-origin allow-scripts allow-pointer-lock"></iframe>
+	<iframe id="iframe-body" src="" sandbox="allow-same-origin allow-scripts allow-pointer-lock"></iframe>
+	<script>
+		var problems = [
+			'easy1',
+			'easy2',
+			'easy3',
+			'turni',
+			'domino',
+			'ois_jumps',
+			'abc_previsioni',
+			'ois_wordsearch',
+			'tris',
+			'abc_studioamico',
+			'poldo',
+			'sommelier',
+			'ois_rescaling',
+			'ois_subset',
+			'nonna',
+			'ponti',
+			'dijkstra',
+			'mat_boa',
+			'abc_edifici',
+			'sunny',
+			'spesa',
+			'ois_excursion',
+			'sentieri',
+			'ois_annoluce',
+			'semiprimo',
+		]
+		var users = [
+			'Andrei',
+			'IvanSpaccatrosi',
+			'bigsheep',
+			'Damiano',
+			'pazzoeo',
+			'DavideSpanti',
+			'Enricobelli00',
+			'Frap',
+			'Francesco02',
+			'AlessandroD',
+			'madeve',
+			'Nhix',
+			'LeonardoVico',
+			'fortytwo',
+			'Arturo',
+			'ByAxeel',
+			'carlo_malagnino',
+			'pietro',
+			'Giulio',
+			'AntonioCap',
+			'SimoneDC01',
+			'dartesco',
+			'Rikart',
+			'RobertB.',
+			'Mattia23',
+			'LarisaMarincas',
+			'crasherlord',
+			'Luca',
+			'chiaradea03',
+			'AndreaDottavio',
+			'Emanueleg2000',
+			'Francesco7',
+			'ArahnZ',
+		]
+		var link = 'https://leadoii.now.sh/leaderboard' + '?u=' + users.join('&u=') + '&p=' + problems.join('&p=');
+
+		document.getElementById('iframe-body').src = link;
+	</script>
 </body>
 </html>
