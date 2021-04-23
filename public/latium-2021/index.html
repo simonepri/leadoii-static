@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Leaderboard for Latium's Athletes of Italian Olympiads of Informatics 2021</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="theme-color" content="#424242" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+</head>
+<body>
+    <style>body{margin:0}iframe{display:block;background:transparent;border:none;height:100vh;width:100vw}</style>
+    <iframe id="iframe-body" src="" sandbox="allow-same-origin allow-scripts allow-pointer-lock"></iframe>
+    <script>
+        var problems = [
+            'easy1',
+            'easy2',
+            'easy3',
+            'luiss_azioni',
+            'ois_police',
+            'costruzioni',
+            'canoa',
+            'discesa',
+            'domino',
+            'sunny',
+            'mattoni',
+            'ois_time',
+            'ois_columns2',
+            'cercalesomme',
+            'disuguaglianze',
+            'ois_truffa',
+            'taxi',
+            'zigzag',
+            'sorteggio',
+            'gator_monete',
+        ]
+        var users = [
+            'Mystral',
+            'FurCrow',
+            'alebecu',
+            'Carmen_Cojocaru',
+            'EmaTri',
+            'valeriomelissa',
+            'Lenny',
+            'Davide_Piccione',
+            'Root5431',
+            'Domenico_Romano',
+            'Cioli',
+            'maxcocco97',
+            'cris0tian',
+            'AleStella',
+            'Alessio_Pec',
+            'alessio',
+            'Guglielmo24',
+            'g._l.a',
+            'Xavier_Hg',
+            'matteobegaj7',
+            'End3rM0dZ',
+            'Ilaria_spelta',
+            'Giulio',
+            'Block0',
+            'angelf',
+            'Davide0306',
+            'Lezhe',
+            'alessio.curcio',
+            'AlexFel',
+            'Andrea_Cecca',
+            'leonardo_greco',
+            'Leog04',
+            'Sam99',
+            'Luxor',
+            'matteo.nardella',
+            'EleTomas',
+            'dguglietti',
+            'InnerBiscuit',
+            'GianLab',
+            'manuelw',
+            'davide210703',
+            'Vincenzo2006',
+            'Sof03',
+            'Seowl',
+            'Joe2Joe1',
+            'Andreasan',
+            'ttudiscovxzh',
+            'Fra_DiIacovo',
+            'Smadonnono',
+            'fedriz03',
+            'Valerio333',
+            'MarcoAna',
+            'danielemarche',
+            'Vr04',
+            'frosa007',
+            'LaraBianchi',
+            'francesco333',
+            'Mircoc',
+            'lmzz05',
+            'Luxor',
+            'aqwezx',
+            'Danda',
+            'Lor3nxin1k',
+            'emiliopremium',
+            'Riho',
+            'giuseppeds',
+            'DanieleCalisti',
+            'danpis04',
+            'MadAndreoid',
+        ]
+        var link = 'https://leadoii.now.sh/leaderboard' + '?u=' + users.join('&u=') + '&p=' + problems.join('&p=');
+
+        document.getElementById('iframe-body').src = link;
+    </script>
+</body>
+</html>
